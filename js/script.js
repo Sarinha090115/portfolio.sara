@@ -43,3 +43,17 @@ include('js/jquery.simplr.smoothscroll.js');
         $.srSmoothscroll();
     }
   });
+
+// Menu mobile
+document.querySelector('.navigation nav').addEventListener('click', function(e) {
+  if (e.target.tagName === 'NAV') {
+    this.classList.toggle('active');
+  }
+});
+
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.navigation nav a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.querySelector('.navigation nav').classList.remove('active');
+  });
+});
