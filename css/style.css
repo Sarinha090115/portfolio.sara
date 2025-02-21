@@ -406,7 +406,7 @@ header h1 a {
 /****Gallery****/
 .element {
   border: 1px solid #151515;
-  margin: 0;
+  
 }
 .element + .element {
   margin-left: -1px;
